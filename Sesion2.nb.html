@@ -240,9 +240,118 @@ str(mtcars)</code></pre>
 <!-- rnb-frame-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Selection of data frame elements</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MywibmNvbCI6NSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCZ3R5aVREbWl1QmlZR0JnWm1BQlltWldJSk9CelRuQTBNalVpSUdCaFFuSVl3VEtjSUxvQ3FBcVlTQURwRVlBcWdVa3dlNmJXcFJjV2xRSjViS0dwZWFWRmtNNUxMNkpSY1ZvNm9WQ1VvdUtVb3RMaWpJVGN4UUtjaEx6VWt2SWttRmc0QU9aYW4ramFJUENrZG5MN04vRm1kclh2SjFvLzVCTjVhNisxQUtZdklOdjRPdFd1UjFCQi9JU0ZsL25zaTIwLzFEMTBIMmRTRFZRRHVKeEZJRGlaZGE4eE54VW1QTlpZVjRDQ2NMWUpaVUZNRFpIU2laUW9pUzFDTVl2eWk5SkxNbk16NE1aVnBTWmwxNk1aZ05uVVg2NUhzd1dYcWh6R0lFWXBJZ0YzVG5KT1luRk1PZkFCTGxTRWtzUzlkS0tRSTVpWVBpSHBvVTl2d0RrQktBbUp1U29nOGRwRVpxQVFHa2V5RFVwdXNrWnBYblp1b2FHMEZCaWhHSmVLTTJNeEdhRjJNbjBIeTJnMkZMejBqUHpZTUhEbXBPWWxKb0Q1ZkFCdlEzMnRWNEJNRlJna2N3RkZDM1dLd0VHRzB3ZFYzSitEa3dFN0RtR2Z3Q2hSK0tIc3dJQUFBPT0ifQ== -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["type"],"name":[2],"type":["chr"],"align":["left"]},{"label":["diameter"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["rotation"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["rings"],"name":[5],"type":["lgl"],"align":["right"]}],"data":[{"1":"Mercury","2":"Terrestrial planet","3":"0.382","4":"58.64","5":"FALSE","_rn_":"1"},{"1":"Venus","2":"Terrestrial planet","3":"0.949","4":"-243.02","5":"FALSE","_rn_":"2"},{"1":"Mars","2":"Terrestrial planet","3":"0.532","4":"1.03","5":"FALSE","_rn_":"4"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[3]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Sorting</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6NSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCZ3R5aVREbWl1QmlZR0JnWm1BQlltWldJSk9CelRuQTBNalVpSUdCaFFuSVl3VEtjSUxvQ3FBcVlTQURwRVlBaUZtZ0V1eGVwUVdaSmFsRlVDNWJjR0pKYVZFZWpCZGFsSmhYV2d4VDZwZGFVRkthbDRwbUFxZDdZckZDZW1aaVhnazVBZ3dNZkNDekhOU3ltWGc4ZDhVNUtEMTlIUHo5M0UwSEFYWnRrSUFEdjBDUzc2V1BxMkRxN0cvWkZpeSt6bVZyZjd0VmJrZmc2OWI5ejduQUF2WlB3Y0tGUURWY1lMZUJ2STZDVVlLRE5TOHhON1VZNmhGV3FDQUxTQkRHTHFrc2dMRTVVaktCRW9ndzRpaktMMGtzeWN5SGhSSnJVV1plZWpHYURaeEYrZVY2TUZ0NG9VNENCVDRiS0NSQnBxQTdLVGtuc1JqbUpKZ2dWMHBpU2FKZVdoSElZUXdNLzlDMHNPY1hnSndCMU1TRUhMWHdPQzlDRXhBb3pRTzVLRVUzT2FNMEwxdlh5QUlhV3JCUTRvWFNMRWhzVm9pZFRQL1JBb3N0TlM4OU13OFdSS3c1aVVtcE9WQU9IOURyWUovckZRQkRCaGJuWEVEUllyMFNZTkRCMUhFbDUrZkFSTUNlWS9nSEFCYUZuV3ZUQWdBQSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["type"],"name":[2],"type":["chr"],"align":["left"]},{"label":["diameter"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["rotation"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["rings"],"name":[5],"type":["lgl"],"align":["right"]}],"data":[{"1":"Jupiter","2":"Gas giant","3":"11.209","4":"0.41","5":"TRUE","_rn_":"5"},{"1":"Saturn","2":"Gas giant","3":"9.449","4":"0.43","5":"TRUE","_rn_":"6"},{"1":"Uranus","2":"Gas giant","3":"4.007","4":"-0.72","5":"TRUE","_rn_":"7"},{"1":"Neptune","2":"Gas giant","3":"3.883","4":"0.67","5":"TRUE","_rn_":"8"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[4]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9zaXRpb25zXG5cbmBgYCJ9 -->
+<pre class="r"><code>positions
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDEgNCAyIDMgOCA3IDYgNVxuIn0= -->
+<pre><code>[1] 1 4 2 3 8 7 6 5</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Lists</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubXlfbGlzdFxuXG5gYGAifQ== -->
+<pre class="r"><code>my_list
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiW1sxXV1cbiBbMV0gIDEgIDIgIDMgIDQgIDUgIDYgIDcgIDggIDkgMTBcblxuW1syXV1cbiAgICAgWywxXSBbLDJdIFssM11cblsxLF0gICAgMSAgICA0ICAgIDdcblsyLF0gICAgMiAgICA1ICAgIDhcblszLF0gICAgMyAgICA2ICAgIDlcblxuW1szXV1cbiJ9 -->
+<pre><code>[[1]]
+ [1]  1  2  3  4  5  6  7  8  9 10
+
+[[2]]
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+[[3]]</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6NSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCZ3R5aVREbWl1QmlZR0JnWm1BQlltWldJSk9CelRuQTBNalVpSUdCaFFuSVl3VEtjSUxvQ3FBcVlTQURwRVlBaUZtZ0V1eStxVVhKcFVXVlVDNXJXR3BlYVRHTTQ1cFlWSklCNWJENEpoWVZvMmtXQ2trdEtrb3RMaW5LVE14UktNaEp6RXN0b2JJTUF3TWZ5RDc3RzBVYkZJN01YbWIvTHM3VXZ1YnRSUHNQREdCZy81Qk41YTYrMUFLWU9nZmZ3TmV0Y2p1Q0R1UWxMTDdPWlZzSVYvZWg2cUg3T3BGcUlKTUw3SDRNZ0JKYXJIbUp1YWt3ejdMQ0FnQWtDR09YVkJiQTJCd3BtVUNKa3RRaUdMOG92eVN4SkRNL0QyWllVV1plZWpHYURaeEYrZVY2TUZ0NGdaaXBBZW9PZEtjazV5UVd3NXdDRStSS1NTeEoxRXNyQWptSWdlRWZtaGIyL0FLUTlVQk5UTWd4RGs4S1JXZ0NBcVY1SUplazZDWm5sT1psNnhvYlEwT0pFWXA1b1RRTEVwc1ZZaWZUZjdSQVlrdk5TOC9NZ3dVTmEwNWlVbW9PbE1NSDlETFl4M29Gd0JDQlJUb1hVTFJZcndRWVpEQjFYTW41T1RBUnNPY1kvZ0VBdlF0c3J1b0NBQUE9In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["type"],"name":[2],"type":["chr"],"align":["left"]},{"label":["diameter"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["rotation"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["rings"],"name":[5],"type":["lgl"],"align":["right"]}],"data":[{"1":"Mercury","2":"Terrestrial planet","3":"0.382","4":"58.64","5":"FALSE","_rn_":"1"},{"1":"Venus","2":"Terrestrial planet","3":"0.949","4":"-243.02","5":"FALSE","_rn_":"2"},{"1":"Earth","2":"Terrestrial planet","3":"1.000","4":"1.00","5":"FALSE","_rn_":"3"},{"1":"Mars","2":"Terrestrial planet","3":"0.532","4":"1.03","5":"FALSE","_rn_":"4"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[4]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTkFcbiJ9 -->
+<pre><code>NA</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>creating a named list</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubXlfbGlzdFxuXG5gYGAifQ== -->
+<pre class="r"><code>my_list
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJHZlY3RvclxuIFsxXSAgMSAgMiAgMyAgNCAgNSAgNiAgNyAgOCAgOSAxMFxuXG4kbWF0cml4XG4gICAgIFssMV0gWywyXSBbLDNdXG5bMSxdICAgIDEgICAgNCAgICA3XG5bMixdICAgIDIgICAgNSAgICA4XG5bMyxdICAgIDMgICAgNiAgICA5XG5cbiRkYXRhZnJhbWVcbiJ9 -->
+<pre><code>$vector
+ [1]  1  2  3  4  5  6  7  8  9 10
+
+$matrix
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+$dataframe</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6NCwibmNvbCI6NSwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCZ3R5aVREbWl1QmlZR0JnWm1BQlltWldJSk9CelRuQTBNalVpSUdCaFFuSVl3VEtjSUxvQ3FBcVlTQURwRVlBaUZtZ0V1eStxVVhKcFVXVlVDNXJXR3BlYVRHTTQ1cFlWSklCNWJENEpoWVZvMmtXQ2trdEtrb3RMaW5LVE14UktNaEp6RXN0b2JJTUF3TWZ5RDc3RzBVYkZJN01YbWIvTHM3VXZ1YnRSUHNQREdCZy81Qk41YTYrMUFLWU9nZmZ3TmV0Y2p1Q0R1UWxMTDdPWlZzSVYvZWg2cUg3T3BGcUlKTUw3SDRNZ0JKYXJIbUp1YWt3ejdMQ0FnQWtDR09YVkJiQTJCd3BtVUNKa3RRaUdMOG92eVN4SkRNL0QyWllVV1plZWpHYURaeEYrZVY2TUZ0NGdaaXBBZW9PZEtjazV5UVd3NXdDRStSS1NTeEoxRXNyQWptSWdlRWZtaGIyL0FLUTlVQk5UTWd4RGs4S1JXZ0NBcVY1SUplazZDWm5sT1psNnhxYlFrT0pFWXA1b1RRTEVwc1ZZaWZUZjdSQVlrdk5TOC9NZ3dVTmEwNWlVbW9PbE1NSDlETFl4M29Gd0JDQlJUb1hVTFJZcndRWVpEQjFYTW41T1RBUnNPY1kvZ0VBTU1IWlB1b0NBQUE9In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["type"],"name":[2],"type":["chr"],"align":["left"]},{"label":["diameter"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["rotation"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["rings"],"name":[5],"type":["lgl"],"align":["right"]}],"data":[{"1":"Mercury","2":"Terrestrial planet","3":"0.382","4":"58.64","5":"FALSE","_rn_":"1"},{"1":"Venus","2":"Terrestrial planet","3":"0.949","4":"-243.02","5":"FALSE","_rn_":"2"},{"1":"Earth","2":"Terrestrial planet","3":"1.000","4":"1.00","5":"FALSE","_rn_":"3"},{"1":"Mars","2":"Terrestrial planet","3":"0.532","4":"1.03","5":"FALSE","_rn_":"4"}],"options":{"columns":{"min":{},"max":[10],"total":[5]},"rows":{"min":[10],"max":[10],"total":[4]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiTkFcbiJ9 -->
+<pre><code>NA</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Selecting elements from a list</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbImRhdGEuZnJhbWUiXSwibnJvdyI6MiwibmNvbCI6Miwic3VtbWFyeSI6W119LCJyZGYiOiJINHNJQUFBQUFBQUFCbDFRUzQ3Q01BeDFBK1VUQ1lURU9haEVnU1ZpTVJ4Z3hJcmxoRktnb2lTUUJqSDM0U0p6aTduR25BREdLZmFDUklwc3YvajUrV1cxWEUva1dnSkFBNXA0R3pHbTBQcjRIS2V6RktBcHNJcndwZXZqTjNZTk1mRmczOGNmL1hYL2xmUEw0Zy80U0hxbjh6WWcxdXFVVjVnTTZxWVgyTEhHS1ZjWXpVMjIwUHNxWUhhdHVTWE03cEdFcUxjT0pMSlNWU3pCb053cXA1S2RSVDVXajREU05tY3ZqeVRoemNVQk9iSUJNTGhxdjhsMmxCMnUramlhcHVRNm90dWpLTjV6cnltZU5DdW1XYTFjN3d1ZDgvS2wydVFsRlgyMFhEdE96dmdqanEwZ1dpVU92NHo3WkdaS1JtcHo4UGdIQkdWYmh0VUJBQUE9In0= -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["rotation"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["rings"],"name":[2],"type":["lgl"],"align":["right"]}],"data":[{"1":"-243.02","2":"FALSE","_rn_":"2"},{"1":"1.00","2":"FALSE","_rn_":"3"}],"options":{"columns":{"min":{},"max":[10],"total":[2]},"rows":{"min":[10],"max":[10],"total":[2]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpEYXRhZnJhbWVzIA0KDQpgYGB7cn0NCg0KbXRjYXJzDQoNCmhlYWQobXRjYXJzKQ0KdGFpbChtdGNhcnMpDQoNCnN0cihtdGNhcnMpDQpgYGANCg0KDQpgYGB7cn0NCm5hbWUgPC0gYygiTWVyY3VyeSIsICJWZW51cyIsICJFYXJ0aCIsICJNYXJzIiwgIkp1cGl0ZXIiLCAiU2F0dXJuIiwgIlVyYW51cyIsICJOZXB0dW5lIikNCnR5cGUgPC0gYygiVGVycmVzdHJpYWwgcGxhbmV0IiwgIlRlcnJlc3RyaWFsIHBsYW5ldCIsICJUZXJyZXN0cmlhbCBwbGFuZXQiLCANCiAgICAgICAgICAiVGVycmVzdHJpYWwgcGxhbmV0IiwgIkdhcyBnaWFudCIsICJHYXMgZ2lhbnQiLCAiR2FzIGdpYW50IiwgIkdhcyBnaWFudCIpDQpkaWFtZXRlciA8LSBjKDAuMzgyLCAwLjk0OSwgMSwgMC41MzIsIDExLjIwOSwgOS40NDksIDQuMDA3LCAzLjg4MykNCnJvdGF0aW9uIDwtIGMoNTguNjQsIC0yNDMuMDIsIDEsIDEuMDMsIDAuNDEsIDAuNDMsIC0wLjcyLCAwLjY3KQ0KcmluZ3MgPC0gYyhGQUxTRSwgRkFMU0UsIEZBTFNFLCBGQUxTRSwgVFJVRSwgVFJVRSwgVFJVRSwgVFJVRSkNCg0KcGxhbmV0c19kZiA8LSBkYXRhLmZyYW1lKG5hbWUsIHR5cGUsIGRpYW1ldGVyLCByb3RhdGlvbiwgcmluZ3MpDQpwbGFuZXRzX2RmDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpEYXRhZnJhbWVzIA0KDQpgYGB7cn0NCg0KbXRjYXJzDQoNCmhlYWQobXRjYXJzKQ0KdGFpbChtdGNhcnMpDQoNCnN0cihtdGNhcnMpDQpgYGANCg0KDQpgYGB7cn0NCm5hbWUgPC0gYygiTWVyY3VyeSIsICJWZW51cyIsICJFYXJ0aCIsICJNYXJzIiwgIkp1cGl0ZXIiLCAiU2F0dXJuIiwgIlVyYW51cyIsICJOZXB0dW5lIikNCnR5cGUgPC0gYygiVGVycmVzdHJpYWwgcGxhbmV0IiwgIlRlcnJlc3RyaWFsIHBsYW5ldCIsICJUZXJyZXN0cmlhbCBwbGFuZXQiLCANCiAgICAgICAgICAiVGVycmVzdHJpYWwgcGxhbmV0IiwgIkdhcyBnaWFudCIsICJHYXMgZ2lhbnQiLCAiR2FzIGdpYW50IiwgIkdhcyBnaWFudCIpDQpkaWFtZXRlciA8LSBjKDAuMzgyLCAwLjk0OSwgMSwgMC41MzIsIDExLjIwOSwgOS40NDksIDQuMDA3LCAzLjg4MykNCnJvdGF0aW9uIDwtIGMoNTguNjQsIC0yNDMuMDIsIDEsIDEuMDMsIDAuNDEsIDAuNDMsIC0wLjcyLCAwLjY3KQ0KcmluZ3MgPC0gYyhGQUxTRSwgRkFMU0UsIEZBTFNFLCBGQUxTRSwgVFJVRSwgVFJVRSwgVFJVRSwgVFJVRSkNCg0KcGxhbmV0c19kZiA8LSBkYXRhLmZyYW1lKG5hbWUsIHR5cGUsIGRpYW1ldGVyLCByb3RhdGlvbiwgcmluZ3MpDQpwbGFuZXRzX2RmDQpgYGANCg0KU2VsZWN0aW9uIG9mIGRhdGEgZnJhbWUgZWxlbWVudHMNCg0KYGBge3J9DQoNCnBsYW5ldHNfZGZbMSwzXQ0KDQpwbGFuZXRzX2RmWzQsIF0NCg0KcGxhbmV0c19kZlsxOjUsIF0NCg0KcGxhbmV0c19kZlsxOjUsICJyb3RhdGlvbiIgXQ0KDQpwbGFuZXRzX2RmWzE6NSwgYygicm90YXRpb24iLCAidHlwZSIpXQ0KDQpyaW5nc192ZWN0b3IgPC0gcGxhbmV0c19kZiRyaW5ncw0KcmluZ3NfdmVjdG9yDQoNCnBsYW5ldHNfZGZbIXJpbmdzX3ZlY3RvcixdDQoNCnN1YnNldChwbGFuZXRzX2RmLCBzdWJzZXQgPSBkaWFtZXRlciA8IDEpDQoNCmBgYA0KDQoNCg0KU29ydGluZyANCg0KYGBge3J9DQoNCmEgPC0gYygxMDAsIDEwLCAxMDAwKQ0KYiA9IG9yZGVyKGEpDQphW2JdDQoNCnBvc2l0aW9ucyA8LSBvcmRlciggcGxhbmV0c19kZiRkaWFtZXRlciApDQoNCnBsYW5ldHNfZGZbcG9zaXRpb25zLCBjKCJkaWFtZXRlciIsICJ0eXBlIikgXQ0KDQpwbGFuZXRzX2RmW3R5cGUgPT0gIkdhcyBnaWFudCIsXQ0KYGBgDQoNCmBgYHtyfQ0KcG9zaXRpb25zDQpgYGANCg0KTGlzdHMNCg0KYGBge3J9DQoNCm15X3ZlY3RvciA8LSAxOjEwDQpteV9tYXRyaXggPC0gbWF0cml4KDE6OSwgbmNvbCA9IDMpDQpteV9kZiA8LSBwbGFuZXRzX2RmWzE6NCwgXQ0KDQpteV9saXN0IDwtIGxpc3QobXlfdmVjdG9yLCBteV9tYXRyaXgsIG15X2RmKQ0KDQpteV9saXN0DQoNCmBgYA0KDQpjcmVhdGluZyBhIG5hbWVkIGxpc3QNCg0KYGBge3J9DQpuYW1lcyhteV9saXN0KSA8LSBjKCJ2ZWN0b3IiLCAibWF0cml4IiwgImRhdGFmcmFtZSIpDQpteV9saXN0DQpgYGANCg0KU2VsZWN0aW5nIGVsZW1lbnRzIGZyb20gYSBsaXN0IA0KDQpgYGB7cn0NCg0KbXlfbGlzdFtbMV1dWzRdDQoNCm15X2xpc3RbWyJtYXRyaXgiXV1bMixdDQoNCm15X2xpc3RbWzNdXVsyOjMsIGMoInJvdGF0aW9uIiwgInJpbmdzIildDQpgYGANCg0K</div>
 
 
 
