@@ -258,9 +258,54 @@ pre code {
 <p>Compare vectors</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmlld3Nbdmlld3M8MTVdXG5cbmBgYCJ9 -->
-<pre class="r"><code>views[views&lt;15]
-</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlua2VkaW4gPC0gYygxNSwyMywxMyw1LDEsMTMsMTQpXG5mYWNlYm9vayA8LSBjKDE0LDM2LDIxLDIsMywxMiwzKSBcblxubGlua2VkaW4gPiAxNVxuYGBgIn0= -->
+<pre class="r"><code>linkedin &lt;- c(15,23,13,5,1,13,14)
+facebook &lt;- c(14,36,21,2,3,12,3) 
+
+linkedin &gt; 15</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFICBUUlVFIEZBTFNFIEZBTFNFIEZBTFNFIEZBTFNFIEZBTFNFXG4ifQ== -->
+<pre><code>[1] FALSE  TRUE FALSE FALSE FALSE FALSE FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmFjZWJvb2sgPD0gMTBcbmBgYCJ9 -->
+<pre class="r"><code>facebook &lt;= 10</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFIEZBTFNFIEZBTFNFICBUUlVFICBUUlVFIEZBTFNFICBUUlVFXG4ifQ== -->
+<pre><code>[1] FALSE FALSE FALSE  TRUE  TRUE FALSE  TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlua2VkaW4gPiBmYWNlYm9va1xuYGBgIn0= -->
+<pre class="r"><code>linkedin &gt; facebook</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdICBUUlVFIEZBTFNFIEZBTFNFICBUUlVFIEZBTFNFICBUUlVFICBUUlVFXG4ifQ== -->
+<pre><code>[1]  TRUE FALSE FALSE  TRUE FALSE  TRUE  TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmlld3MgPC0gbWF0cml4KGMobGlua2VkaW4sIGZhY2Vib29rKSwgbnJvdz0yLCBieXJvdz1UUlVFKVxudmlld3NcbmBgYCJ9 -->
+<pre class="r"><code>views &lt;- matrix(c(linkedin, facebook), nrow=2, byrow=TRUE)
+views</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXSBbLDRdIFssNV0gWyw2XSBbLDddXG5bMSxdICAgMTUgICAyMyAgIDEzICAgIDUgICAgMSAgIDEzICAgMTRcblsyLF0gICAxNCAgIDM2ICAgMjEgICAgMiAgICAzICAgMTIgICAgM1xuIn0= -->
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7]
+[1,]   15   23   13    5    1   13   14
+[2,]   14   36   21    2    3   12    3</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmlld3MgPT0gMTNcbmBgYCJ9 -->
+<pre class="r"><code>views == 13</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgWywxXSAgWywyXSAgWywzXSAgWyw0XSAgWyw1XSAgWyw2XSAgWyw3XVxuWzEsXSBGQUxTRSBGQUxTRSAgVFJVRSBGQUxTRSBGQUxTRSAgVFJVRSBGQUxTRVxuWzIsXSBGQUxTRSBGQUxTRSBGQUxTRSBGQUxTRSBGQUxTRSBGQUxTRSBGQUxTRVxuIn0= -->
+<pre><code>      [,1]  [,2]  [,3]  [,4]  [,5]  [,6]  [,7]
+[1,] FALSE FALSE  TRUE FALSE FALSE  TRUE FALSE
+[2,] FALSE FALSE FALSE FALSE FALSE FALSE FALSE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmlld3MgPD0gMTRcbmBgYCJ9 -->
+<pre class="r"><code>views &lt;= 14</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgWywxXSAgWywyXSAgWywzXSBbLDRdIFssNV0gWyw2XSBbLDddXG5bMSxdIEZBTFNFIEZBTFNFICBUUlVFIFRSVUUgVFJVRSBUUlVFIFRSVUVcblsyLF0gIFRSVUUgRkFMU0UgRkFMU0UgVFJVRSBUUlVFIFRSVUUgVFJVRVxuIn0= -->
+<pre><code>      [,1]  [,2]  [,3] [,4] [,5] [,6] [,7]
+[1,] FALSE FALSE  TRUE TRUE TRUE TRUE TRUE
+[2,]  TRUE FALSE FALSE TRUE TRUE TRUE TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmlld3Nbdmlld3M8MTVdXG5gYGAifQ== -->
+<pre class="r"><code>views[views&lt;15]</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAxNCAxMyAgNSAgMiAgMSAgMyAxMyAxMiAxNCAgM1xuIn0= -->
 <pre><code> [1] 14 13  5  2  1  3 13 12 14  3</code></pre>
@@ -324,7 +369,7 @@ if(medium == &quot;Linkedin&quot;) {
 <p>Else if 2.0</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtYmVyIDwtMTlcbnJlc3VsdCA8LSBcIlwiXG5pZiggbnVtYmVyIDwgMTAgKSB7XG4gIGlmKCBudW1iZXIgPCA1ICl7XG4gICAgcmVzdWx0IDwtIFwiZXh0cmEgc21hbGxcIlxuICB9ZWxzZSB7XG4gICAgcmVzdWx0IDwtIFwic21hbGxcIlxuICB9XG59IGVsc2UgaWYgKG51bWJlciA8IDEwMCkge1xuICByZXN1bHQgPC0gXCJtZWRpdW1cIlxufSBlbHNlIHtcbiAgcmVzdWx0IDwtIFwibWVkaXVtXCJcbn1cblxucHJpbnQocmVzdWx0KVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubnVtYmVyIDwtMTlcbnJlc3VsdCA8LSBcIlwiXG5pZiggbnVtYmVyIDwgMTAgKSB7XG4gIGlmKCBudW1iZXIgPCA1ICl7XG4gICAgcmVzdWx0IDwtIFwiZXh0cmEgc21hbGxcIlxuICB9ZWxzZSB7XG4gICAgcmVzdWx0IDwtIFwic21hbGxcIlxuICB9XG59IGVsc2UgaWYgKG51bWJlciA8IDEwMCkge1xuICByZXN1bHQgPC0gXCJtZWRpdW1cIlxuICBcbn0gZWxzZSB7XG4gIHJlc3VsdCA8LSBcIm1lZGl1bVwiXG59XG5cbnByaW50KHJlc3VsdClcblxuYGBgIn0= -->
 <pre class="r"><code>number &lt;-19
 result &lt;- &quot;&quot;
 if( number &lt; 10 ) {
@@ -335,20 +380,174 @@ if( number &lt; 10 ) {
   }
 } else if (number &lt; 100) {
   result &lt;- &quot;medium&quot;
+  
 } else {
   result &lt;- &quot;medium&quot;
 }
 
-print(result)</code></pre>
+print(result)
+</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibWVkaXVtXCJcbiJ9 -->
-<pre><code>[1] &quot;medium&quot;</code></pre>
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Loops:</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3BlZWQgPC0gNjRcblxud2hpbGUoc3BlZWQgPiAzMCkge1xuICBwcmludChwYXN0ZShcIllvdXIgc3BlZWQgaXNcIiwgc3BlZWQpKVxuICBcbiAgaWYoIHNwZWVkID49IDQ4KXtcbiAgICBwcmludChcIlNsb3cgZG93biBiaWcgdGltZSFcIilcbiAgICBzcGVlZCA8LSBzcGVlZCAtIDExXG4gIH0gZWxzZSB7XG4gICAgcHJpbnQoXCJTbG93IGRvd24hXCIpXG4gICAgc3BlZWQgPC0gc3BlZWQgLSA2XG4gIH1cbiAgXG4gIFxufVxuYGBgIn0= -->
+<pre class="r"><code>speed &lt;- 64
+
+while(speed &gt; 30) {
+  print(paste(&quot;Your speed is&quot;, speed))
+  
+  if( speed &gt;= 48){
+    print(&quot;Slow down big time!&quot;)
+    speed &lt;- speed - 11
+  } else {
+    print(&quot;Slow down!&quot;)
+    speed &lt;- speed - 6
+  }
+  
+  
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiWW91ciBzcGVlZCBpcyA2NFwiXG5bMV0gXCJTbG93IGRvd24gYmlnIHRpbWUhXCJcblsxXSBcIllvdXIgc3BlZWQgaXMgNTNcIlxuWzFdIFwiU2xvdyBkb3duIGJpZyB0aW1lIVwiXG5bMV0gXCJZb3VyIHNwZWVkIGlzIDQyXCJcblsxXSBcIlNsb3cgZG93biFcIlxuWzFdIFwiWW91ciBzcGVlZCBpcyAzNlwiXG5bMV0gXCJTbG93IGRvd24hXCJcbiJ9 -->
+<pre><code>[1] &quot;Your speed is 64&quot;
+[1] &quot;Slow down big time!&quot;
+[1] &quot;Your speed is 53&quot;
+[1] &quot;Slow down big time!&quot;
+[1] &quot;Your speed is 42&quot;
+[1] &quot;Slow down!&quot;
+[1] &quot;Your speed is 36&quot;
+[1] &quot;Slow down!&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoc3BlZWQpXG5gYGAifQ== -->
+<pre class="r"><code>print(speed)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDMwXG4ifQ== -->
+<pre><code>[1] 30</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Break</p>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3BlZWQgPC0gODhcblxud2hpbGUoc3BlZWQgPiAzMCkge1xuICBwcmludChwYXN0ZShcIllvdXIgc3BlZWQgaXNcIiwgc3BlZWQpKVxuICBcbiAgaWYoIHNwZWVkID49IDgwKXtcbiAgICBicmVha1xuICB9XG4gIGlmKHNwZWVkID4gNDgpe1xuICAgIHByaW50KFwiU2xvdyBkb3duIGJpZyB0aW1lIVwiKVxuICAgIHNwZWVkIDwtIHNwZWVkIC0gMTFcbiAgfVxuICBlbHNlIHtcbiAgICBwcmludChcIlNsb3cgZG93biFcIilcbiAgICBzcGVlZCA8LSBzcGVlZCAtIDZcbiAgfVxuICBcbiAgXG59XG5gYGAifQ== -->
+<pre class="r"><code>speed &lt;- 88
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCjMgPT0gKDIgKyAxKQ0KImludGVybWVkaWF0ZSIgIT0gInIiDQpUUlVFICE9IEZBTFNFDQoiUmNoaXRlY3QiICE9ICJyY2hpdGVjdCINCg0KYGBgDQoNCkdyZWF0ZXIgYW5kIGxlc3MgdGhhbg0KDQpgYGB7cn0NCi02ICogNSArIDEgPj0gLTEwICsgMQ0KInJhaW5pbmciIDw9ICJ0YWJsZSINClRSVUUgPiBGQUxTRQ0KYGBgDQoNCg0KQ29tcGFyZSB2ZWN0b3JzDQoNCmBgYHtyfQ0KbGlua2VkaW4gPC0gYygxNSwyMywxMyw1LDEsMTMsMTQpDQpmYWNlYm9vayA8LSBjKDE0LDM2LDIxLDIsMywxMiwzKSANCg0KbGlua2VkaW4gPiAxNQ0KZmFjZWJvb2sgPD0gMTANCg0KbGlua2VkaW4gPiBmYWNlYm9vaw0KDQp2aWV3cyA8LSBtYXRyaXgoYyhsaW5rZWRpbiwgZmFjZWJvb2spLCBucm93PTIsIGJ5cm93PVRSVUUpDQp2aWV3cw0KDQp2aWV3cyA9PSAxMw0Kdmlld3MgPD0gMTQNCg0Kdmlld3Nbdmlld3M8MTVdDQoNCmBgYA0KDQpMb2dpY2FsIG9wZXJhdG9ycw0KDQpgYGB7cn0NCg0KbGlua2VkaW4gPD0gMTAgfCBmYWNlYm9vayA9PSAxMw0Kdmlld3MgPiAxMSAmIHZpZXdzIDw9IDE0DQpgYGANCklmIHN0YXRlbWVudA0KDQpgYGB7cn0NCm1lZGl1bSA8LSAiRmFjZWJvb2siDQpudW1fdmlld3MgPC0gMTQNCg0KaWYobWVkaXVtID09ICJMaW5rZWRpbiIpIHsNCiAgcHJpbnQoIlNob3dpbmcgbGlua2VkaW4gaW5mb3JtYXRpb24iKQ0KfSBlbHNlIHsNCiAgcHJpbnQoIlVua25vd24gbWVkaXVtIikNCn0NCg0KaWYobnVtX3ZpZXdzID4gMTUpIHsNCiAgcHJpbnQoInlvdSdyZSBwb3B1bGFyIikNCn0gZWxzZSB7DQogIHByaW50KCJUcnkgdG8gYmUgbW9yZSB2aXNpYmxlISIpDQp9DQoNCmBgYA0KDQpDdXN0b21pemUgZnVydGhlcjogZWxzZSBpZg0KDQpgYGB7cn0NCg0KaWYobWVkaXVtID09ICJMaW5rZWRpbiIpIHsNCiAgcHJpbnQoIlNob3dpbmcgbGlua2VkaW4gaW5mb3JtYXRpb24iKQ0KfSBlbHNlIGlmIChtZWRpdW0gPT0gIkZhY2Vib29rIikgew0KICBwcmludCgiU2hvd2luZyBGYWNlYm9vayBpbmZvcm1hdGlvbiIpDQp9IGVsc2Ugew0KICBwcmludCgiVW5rbm93biBtZWRpdW0iKQ0KfQ0KDQpgYGANCkVsc2UgaWYgMi4wDQoNCmBgYHtyfQ0KbnVtYmVyIDwtMTkNCnJlc3VsdCA8LSAiIg0KaWYoIG51bWJlciA8IDEwICkgew0KICBpZiggbnVtYmVyIDwgNSApew0KICAgIHJlc3VsdCA8LSAiZXh0cmEgc21hbGwiDQogIH1lbHNlIHsNCiAgICByZXN1bHQgPC0gInNtYWxsIg0KICB9DQp9IGVsc2UgaWYgKG51bWJlciA8IDEwMCkgew0KICByZXN1bHQgPC0gIm1lZGl1bSINCn0gZWxzZSB7DQogIHJlc3VsdCA8LSAibWVkaXVtIg0KfQ0KDQpwcmludChyZXN1bHQpDQoNCmBgYA0KDQoNCg==</div>
+while(speed &gt; 30) {
+  print(paste(&quot;Your speed is&quot;, speed))
+  
+  if( speed &gt;= 80){
+    break
+  }
+  if(speed &gt; 48){
+    print(&quot;Slow down big time!&quot;)
+    speed &lt;- speed - 11
+  }
+  else {
+    print(&quot;Slow down!&quot;)
+    speed &lt;- speed - 6
+  }
+  
+  
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiWW91ciBzcGVlZCBpcyA4OFwiXG4ifQ== -->
+<pre><code>[1] &quot;Your speed is 88&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoc3BlZWQpXG5gYGAifQ== -->
+<pre class="r"><code>print(speed)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDg4XG4ifQ== -->
+<pre><code>[1] 88</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>For loop</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlua2VkaW4gPC0gYygxNSwyMywxMyw1LDEsMTMsMTQpXG5cbmZvcih2YWwgaW4gbGlua2VkaW4pIHtcbiAgcHJpbnQoIHZhbCApXG59XG5gYGAifQ== -->
+<pre class="r"><code>linkedin &lt;- c(15,23,13,5,1,13,14)
+
+for(val in linkedin) {
+  print( val )
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDE1XG5bMV0gMjNcblsxXSAxM1xuWzFdIDVcblsxXSAxXG5bMV0gMTNcblsxXSAxNFxuIn0= -->
+<pre><code>[1] 15
+[1] 23
+[1] 13
+[1] 5
+[1] 1
+[1] 13
+[1] 14</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZm9yKGkgaW4gMTpsZW5ndGgobGlua2VkaW4pKXtcbiAgcHJpbnQoIGxpbmtlZGluW2ldIClcbn1cbmBgYCJ9 -->
+<pre class="r"><code>for(i in 1:length(linkedin)){
+  print( linkedin[i] )
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIDE1XG5bMV0gMjNcblsxXSAxM1xuWzFdIDVcblsxXSAxXG5bMV0gMTNcblsxXSAxNFxuIn0= -->
+<pre><code>[1] 15
+[1] 23
+[1] 13
+[1] 5
+[1] 1
+[1] 13
+[1] 14</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Loop over a list</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaXMudmVjdG9yKG55YylcblxuYGBgIn0= -->
+<pre class="r"><code>is.vector(nyc)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFRSVUVcbiJ9 -->
+<pre><code>[1] TRUE</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Loop over a matrix</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmlld3MgPC0gbWF0cml4KGMobGlua2VkaW4sIGZhY2Vib29rKSwgbnJvdz0yLCBieXJvdz1UUlVFKVxudmlld3NcbmBgYCJ9 -->
+<pre class="r"><code>views &lt;- matrix(c(linkedin, facebook), nrow=2, byrow=TRUE)
+views</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICBbLDFdIFssMl0gWywzXSBbLDRdIFssNV0gWyw2XSBbLDddXG5bMSxdICAgMTUgICAyMyAgIDEzICAgIDUgICAgMSAgIDEzICAgMTRcblsyLF0gICAxNCAgIDM2ICAgMjEgICAgMiAgICAzICAgMTIgICAgM1xuIn0= -->
+<pre><code>     [,1] [,2] [,3] [,4] [,5] [,6] [,7]
+[1,]   15   23   13    5    1   13   14
+[2,]   14   36   21    2    3   12    3</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZm9yIChyb3cgaW4gMTpucm93KHZpZXdzKSl7XG4gIGZvcihjb2wgaW4gMTpuY29sKHZpZXdzKSl7XG4gICAgcHJpbnQocGFzdGUoXCJPbiByb3dcIiwgcm93LCBcImFuZCBjb2x1bW5cIiwgY29sLCBcImNvbnRhaW5zXCIsIHZpZXdzW3Jvdyxjb2xdKSlcbiAgfVxufVxuYGBgIn0= -->
+<pre class="r"><code>for (row in 1:nrow(views)){
+  for(col in 1:ncol(views)){
+    print(paste(&quot;On row&quot;, row, &quot;and column&quot;, col, &quot;contains&quot;, views[row,col]))
+  }
+}</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiT24gcm93IDEgYW5kIGNvbHVtbiAxIGNvbnRhaW5zIDE1XCJcblsxXSBcIk9uIHJvdyAxIGFuZCBjb2x1bW4gMiBjb250YWlucyAyM1wiXG5bMV0gXCJPbiByb3cgMSBhbmQgY29sdW1uIDMgY29udGFpbnMgMTNcIlxuWzFdIFwiT24gcm93IDEgYW5kIGNvbHVtbiA0IGNvbnRhaW5zIDVcIlxuWzFdIFwiT24gcm93IDEgYW5kIGNvbHVtbiA1IGNvbnRhaW5zIDFcIlxuWzFdIFwiT24gcm93IDEgYW5kIGNvbHVtbiA2IGNvbnRhaW5zIDEzXCJcblsxXSBcIk9uIHJvdyAxIGFuZCBjb2x1bW4gNyBjb250YWlucyAxNFwiXG5bMV0gXCJPbiByb3cgMiBhbmQgY29sdW1uIDEgY29udGFpbnMgMTRcIlxuWzFdIFwiT24gcm93IDIgYW5kIGNvbHVtbiAyIGNvbnRhaW5zIDM2XCJcblsxXSBcIk9uIHJvdyAyIGFuZCBjb2x1bW4gMyBjb250YWlucyAyMVwiXG5bMV0gXCJPbiByb3cgMiBhbmQgY29sdW1uIDQgY29udGFpbnMgMlwiXG5bMV0gXCJPbiByb3cgMiBhbmQgY29sdW1uIDUgY29udGFpbnMgM1wiXG5bMV0gXCJPbiByb3cgMiBhbmQgY29sdW1uIDYgY29udGFpbnMgMTJcIlxuWzFdIFwiT24gcm93IDIgYW5kIGNvbHVtbiA3IGNvbnRhaW5zIDNcIlxuIn0= -->
+<pre><code>[1] &quot;On row 1 and column 1 contains 15&quot;
+[1] &quot;On row 1 and column 2 contains 23&quot;
+[1] &quot;On row 1 and column 3 contains 13&quot;
+[1] &quot;On row 1 and column 4 contains 5&quot;
+[1] &quot;On row 1 and column 5 contains 1&quot;
+[1] &quot;On row 1 and column 6 contains 13&quot;
+[1] &quot;On row 1 and column 7 contains 14&quot;
+[1] &quot;On row 2 and column 1 contains 14&quot;
+[1] &quot;On row 2 and column 2 contains 36&quot;
+[1] &quot;On row 2 and column 3 contains 21&quot;
+[1] &quot;On row 2 and column 4 contains 2&quot;
+[1] &quot;On row 2 and column 5 contains 3&quot;
+[1] &quot;On row 2 and column 6 contains 12&quot;
+[1] &quot;On row 2 and column 7 contains 3&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpgYGB7cn0NCjMgPT0gKDIgKyAxKQ0KImludGVybWVkaWF0ZSIgIT0gInIiDQpUUlVFICE9IEZBTFNFDQoiUmNoaXRlY3QiICE9ICJyY2hpdGVjdCINCg0KYGBgDQoNCkdyZWF0ZXIgYW5kIGxlc3MgdGhhbg0KDQpgYGB7cn0NCi02ICogNSArIDEgPj0gLTEwICsgMQ0KInJhaW5pbmciIDw9ICJ0YWJsZSINClRSVUUgPiBGQUxTRQ0KYGBgDQoNCg0KQ29tcGFyZSB2ZWN0b3JzDQoNCmBgYHtyfQ0KbGlua2VkaW4gPC0gYygxNSwyMywxMyw1LDEsMTMsMTQpDQpmYWNlYm9vayA8LSBjKDE0LDM2LDIxLDIsMywxMiwzKSANCg0KbGlua2VkaW4gPiAxNQ0KZmFjZWJvb2sgPD0gMTANCg0KbGlua2VkaW4gPiBmYWNlYm9vaw0KDQp2aWV3cyA8LSBtYXRyaXgoYyhsaW5rZWRpbiwgZmFjZWJvb2spLCBucm93PTIsIGJ5cm93PVRSVUUpDQp2aWV3cw0KDQp2aWV3cyA9PSAxMw0Kdmlld3MgPD0gMTQNCg0Kdmlld3Nbdmlld3M8MTVdDQoNCmBgYA0KDQpMb2dpY2FsIG9wZXJhdG9ycw0KDQpgYGB7cn0NCg0KbGlua2VkaW4gPD0gMTAgfCBmYWNlYm9vayA9PSAxMw0Kdmlld3MgPiAxMSAmIHZpZXdzIDw9IDE0DQpgYGANCklmIHN0YXRlbWVudA0KDQpgYGB7cn0NCm1lZGl1bSA8LSAiRmFjZWJvb2siDQpudW1fdmlld3MgPC0gMTQNCg0KaWYobWVkaXVtID09ICJMaW5rZWRpbiIpIHsNCiAgcHJpbnQoIlNob3dpbmcgbGlua2VkaW4gaW5mb3JtYXRpb24iKQ0KfSBlbHNlIHsNCiAgcHJpbnQoIlVua25vd24gbWVkaXVtIikNCn0NCg0KaWYobnVtX3ZpZXdzID4gMTUpIHsNCiAgcHJpbnQoInlvdSdyZSBwb3B1bGFyIikNCn0gZWxzZSB7DQogIHByaW50KCJUcnkgdG8gYmUgbW9yZSB2aXNpYmxlISIpDQp9DQoNCmBgYA0KDQpDdXN0b21pemUgZnVydGhlcjogZWxzZSBpZg0KDQpgYGB7cn0NCg0KaWYobWVkaXVtID09ICJMaW5rZWRpbiIpIHsNCiAgcHJpbnQoIlNob3dpbmcgbGlua2VkaW4gaW5mb3JtYXRpb24iKQ0KfSBlbHNlIGlmIChtZWRpdW0gPT0gIkZhY2Vib29rIikgew0KICBwcmludCgiU2hvd2luZyBGYWNlYm9vayBpbmZvcm1hdGlvbiIpDQp9IGVsc2Ugew0KICBwcmludCgiVW5rbm93biBtZWRpdW0iKQ0KfQ0KDQpgYGANCkVsc2UgaWYgMi4wDQoNCg0KYGBge3J9DQpudW1iZXIgPC0xOQ0KcmVzdWx0IDwtICIiDQppZiggbnVtYmVyIDwgMTAgKSB7DQogIGlmKCBudW1iZXIgPCA1ICl7DQogICAgcmVzdWx0IDwtICJleHRyYSBzbWFsbCINCiAgfWVsc2Ugew0KICAgIHJlc3VsdCA8LSAic21hbGwiDQogIH0NCn0gZWxzZSBpZiAobnVtYmVyIDwgMTAwKSB7DQogIHJlc3VsdCA8LSAibWVkaXVtIg0KICANCn0gZWxzZSB7DQogIHJlc3VsdCA8LSAibWVkaXVtIg0KfQ0KDQpwcmludChyZXN1bHQpDQoNCmBgYA0KDQpMb29wczoNCg0KYGBge3J9DQpzcGVlZCA8LSA2NA0KDQp3aGlsZShzcGVlZCA+IDMwKSB7DQogIHByaW50KHBhc3RlKCJZb3VyIHNwZWVkIGlzIiwgc3BlZWQpKQ0KICANCiAgaWYoIHNwZWVkID49IDQ4KXsNCiAgICBwcmludCgiU2xvdyBkb3duIGJpZyB0aW1lISIpDQogICAgc3BlZWQgPC0gc3BlZWQgLSAxMQ0KICB9IGVsc2Ugew0KICAgIHByaW50KCJTbG93IGRvd24hIikNCiAgICBzcGVlZCA8LSBzcGVlZCAtIDYNCiAgfQ0KICANCiAgDQp9DQpwcmludChzcGVlZCkNCmBgYA0KDQpCcmVhaw0KDQpgYGB7cn0NCnNwZWVkIDwtIDg4DQoNCndoaWxlKHNwZWVkID4gMzApIHsNCiAgcHJpbnQocGFzdGUoIllvdXIgc3BlZWQgaXMiLCBzcGVlZCkpDQogIA0KICBpZiggc3BlZWQgPj0gODApew0KICAgIGJyZWFrDQogIH0NCiAgaWYoc3BlZWQgPiA0OCl7DQogICAgcHJpbnQoIlNsb3cgZG93biBiaWcgdGltZSEiKQ0KICAgIHNwZWVkIDwtIHNwZWVkIC0gMTENCiAgfQ0KICBlbHNlIHsNCiAgICBwcmludCgiU2xvdyBkb3duISIpDQogICAgc3BlZWQgPC0gc3BlZWQgLSA2DQogIH0NCiAgDQogIA0KfQ0KcHJpbnQoc3BlZWQpDQpgYGANCg0KRm9yIGxvb3ANCg0KYGBge3J9DQpsaW5rZWRpbiA8LSBjKDE1LDIzLDEzLDUsMSwxMywxNCkNCg0KZm9yKHZhbCBpbiBsaW5rZWRpbikgew0KICBwcmludCggdmFsICkNCn0NCg0KZm9yKGkgaW4gMTpsZW5ndGgobGlua2VkaW4pKXsNCiAgcHJpbnQoIGxpbmtlZGluW2ldICkNCn0NCg0KYGBgDQoNCkxvb3Agb3ZlciBhIGxpc3QNCg0KYGBge3J9DQpueWMgPC0gbGlzdChwb3A9ODUwNjM0MiwgYm9yb3VnaHM9YygiTWFuaGF0YW4iLCAiQnJvbngiLCAiQnJvb2tseW4iLCAiUXVlZW5zIiksIGNhcGl0YWw9RkFMU0UpDQoNCmZvcihuIGluIG55Yyl7DQogIHByaW50KG4pDQp9DQpmb3IoaSBpbiAxOmxlbmd0aChueWMpKXsNCiAgaWYoaT09Mikgew0KICAgIGZvcihqIGluIDE6bGVuZ3RoKG55Y1tbaV1dKSl7DQogICAgICBwcmludCggbnljW1tpXV1bal0pDQogICAgfQ0KICB9DQogIHByaW50KG55Y1tbaV1dKQ0KfQ0KDQpgYGANCkxvb3Agb3ZlciBhIG1hdHJpeA0KDQpgYGB7cn0NCnZpZXdzIDwtIG1hdHJpeChjKGxpbmtlZGluLCBmYWNlYm9vayksIG5yb3c9MiwgYnlyb3c9VFJVRSkNCnZpZXdzDQpmb3IgKHJvdyBpbiAxOm5yb3codmlld3MpKXsNCiAgZm9yKGNvbCBpbiAxOm5jb2wodmlld3MpKXsNCiAgICBwcmludChwYXN0ZSgiT24gcm93Iiwgcm93LCAiYW5kIGNvbHVtbiIsIGNvbCwgImNvbnRhaW5zIiwgdmlld3Nbcm93LGNvbF0pKQ0KICB9DQp9DQpgYGANCg==</div>
 
 
 
