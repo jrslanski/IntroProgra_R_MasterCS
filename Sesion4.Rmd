@@ -98,3 +98,38 @@ for(t in temp){
 }
 ```
 
+lapply and anonymous functions
+
+```{r}
+
+pioneers <- c("Gauss:1777", "Bayes:1702", "PASCAL:1623", "Pearson:1857")
+
+split <- strsplit(pioneers, split=":")
+
+split_low <- lapply(split, tolower)
+
+split
+split_low
+
+names <- lapply(split_low, function(x){ x[1] })
+names
+
+years <- lapply(split_low, function(x){ x[2] })
+years
+```
+Use lapply with additional arguments
+
+```{r}
+
+select_el <- function(x, index){
+  x[index]
+}
+
+names <- lapply(split_low, select_el, index = 1)
+names
+
+years <- lapply(split_low, select_el, index=2)
+years
+
+```
+
